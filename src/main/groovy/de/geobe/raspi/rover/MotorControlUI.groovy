@@ -57,7 +57,7 @@ class MotorControlUI extends LanternaBase {
         } else {
             MotorControlUI ui
             try {
-                restUri = 'http://192.168.101.134:7070'
+                restUri = 'http://10.10.10.1:7070'
                 ui = new MotorControlUI(new JMotorControlClient(restUri))
             } catch (RuntimeException rex) {
                 ui = new MotorControlUI(new MockMotorControl())

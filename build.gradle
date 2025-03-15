@@ -14,9 +14,12 @@ repositories {
 apply plugin: "idea"
 apply from: 'https://raw.githubusercontent.com/geobe/Java2PiWithIdea/master/crossdev.gradle'
 
+/* use this to access control from remote */
 mainClassName='de.geobe.raspi.rover.MotorControlJavalin'
-//mainClassName='de.geobe.raspi.rover.BasicMotorControl'
+/* this one creates a text UI directly on the raspi */
 //mainClassName='de.geobe.raspi.rover.MotorControlUI'
+/* these are for testing and hardware configuration */
+//mainClassName='de.geobe.raspi.rover.BasicMotorControl'
 //mainClassName='de.geobe.raspi.rover.MotorControlService'
 
 dependencies {
